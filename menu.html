@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>widget animated menu on native JS</title>
+    <link rel="stylesheet" href="menu.css"/>
+    <script src="https://cdn.polyfill.io/v1/polyfill.js?features=Element.prototype.closest"></script>
+    <script src="menu.js"></script>
+</head>
+<body>
+    <script>
+        var menu = new Menu({
+            title: "Super menu",
+            items: [
+                "Item menu 1",
+                "Item menu 2",
+                "Item menu 3",
+                "Item menu 4",
+                "Item menu 5"
+            ]
+        });
+
+        document.body.appendChild(menu.getElem());
+    </script>
+</body>
+</html>

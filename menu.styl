@@ -1,0 +1,53 @@
+$baseHeight = 40px
+$baseWidth = 150px
+$colorMenu = #ffc
+$colorBorder = #cfc
+$colorHover = #fef
+$baseBorderRadius = 5px
+$baseBorderWidth = 1px
+$basePadding = 5px
+$fontSizeBase = 16px
+$fontSizeHeader = 18px
+
+.menu,
+.menu__header,
+.menu__items
+  cursor pointer
+  box-sizing border-box
+  text-align center
+
+.menu
+  position: relative;
+  width $baseWidth
+
+  &__header
+    background $colorMenu
+    line-height $baseHeight - $baseBorderWidth
+    border $baseBorderWidth solid $colorBorder
+    font-size $fontSizeHeader
+    &:hover
+       background-color $colorHover
+
+  &__items
+    background $baseBorderRadius
+    position absolute
+    top $baseHeight
+    list-style none
+    margin 0
+    padding 0
+    display none
+    border $baseBorderWidth solid $colorBorder
+    width 100%
+
+    &_t_open
+      display block
+
+  &__item
+    background-color $colorMenu
+    &:hover
+      background-color $colorHover
+
+  &__link
+    display: block
+    padding $basePadding
+    font-size $fontSizeBase
