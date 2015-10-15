@@ -1,2 +1,3 @@
 # widget-animate-menu
-widget animated menu on native JS
+widget dynamic menu on native JS
+
